@@ -1,0 +1,119 @@
+<%page expression_filter="h"/>
+<%!
+  from django.conf import settings
+  from django.core.urlresolvers import reverse
+  from django.utils.translation import ugettext as _
+%>
+<%inherit file="../main.html" />
+
+<%!
+  from datetime import date
+%>
+
+<%block name="pagetitle">${_('Terms of Service')}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+<section class="container about">
+	<p>&nbsp;</p>
+	<h2 style="text-align: center;"><strong>서비스 약관</strong></h2>
+<h2 style="text-align: center;"><strong>MPPLab LEARNING WEBSITE</strong></h2>
+<p><strong>제1조 [목적]</strong></p>
+<p>본 약관은 스퀘어네트㈜(이하 &ldquo;회사&rdquo;라 합니다)가 웹사이트(mpplab.co.kr)를 통하여 제공하는 교육정보서비스(이하 &ldquo;서비스&rdquo;라 합니다)의 이용과 관련하여 회사와 회원 사이에 권리ㆍ의무 및 책임사항 등을 규정함을 목적으로 합니다. 회사는 언제든지 새로운 약관을 게시함으로써 사전 통보없이 본 서비스 조건을 변경할 수있는 권리를 보유합니다.&nbsp;변경 사항에 동의하지 않으면 서비스 사용을 중단해야합니다.</p>
+<p><strong>제2조 [회사 신원정보 등의 제공]&nbsp;<br /></strong></p>
+<p>회사는 회사의 상호, 대표자 성명, 주소, 전화번호(소비자의 불만을 처리하는 곳의 연락처 포함), 전자우편주소, 사업자등록번호 등을 이용자가 쉽게 알 수 있도록 온라인 서비스 화면에 게시합니다.</p>
+<p>&nbsp;</p>
+<p><strong>제</strong><strong>3</strong><strong>조</strong><strong> [</strong><strong>약관의</strong> <strong>게시</strong> <strong>등</strong><strong>]</strong></p>
+<p>① 회사는 이용자가 별도의 연결화면을 통하여 약관을 확인할 수 있도록 회사 웹사이트에 게시하며, 약관의 전문을 출력할 수 있도록 하고 있습니다.</p>
+<p>&nbsp;</p>
+<p><strong>제</strong><strong>4</strong><strong>조</strong><strong> [</strong><strong>약관의</strong> <strong>개정</strong><strong>]</strong></p>
+<p>① 회사는 관계법령을 위배하지 않는 범위에서 본 약관을 개정할 수 있습니다.</p>
+<p>② 기존 회원이 변경된 약관에 동의하지 않는 경우 서비스 이용을 중단하고 회원탈퇴를 할 수 있습니다.</p>
+<p>&nbsp;</p>
+<p><strong>제</strong><strong>5</strong><strong>조</strong><strong> [</strong><strong>약관의</strong> <strong>효력</strong><strong>]</strong></p>
+<p>① 본 약관은 이용자가 약관의 내용에 동의하며 회원가입을 신청하고, 회사가 그 신청에 대하여 승낙함으로써 효력이 발생합니다.</p>
+<p>&nbsp;</p>
+<p><strong>제</strong><strong>6</strong><strong>조</strong><strong> [&ldquo;</strong><strong>회원</strong><strong>&rdquo;</strong><strong>에</strong> <strong>대한</strong> <strong>통지</strong><strong>]</strong></p>
+<p>① 회사는 회원에게 알려야 할 사항이 발생하는 경우, 회원가입 시 회원이 공개한 전자우편주소로 통지할 수 있습니다.</p>
+<p>② 회사는 회원 전체에 대한 통지의 경우 10일 이상 회사 웹사이트 게시판에 게시함으로써 전항의 통지에 갈음할 수 있습니다. 다만, 회원 본인의 거래 및 사이트의 이용과 관련하여 중대한 영향을 미치는 사항에 대하여는 30일 이상 전항과 동일한 방법으로 별도 통지할 수 있습니다.</p>
+<p>&nbsp;</p>
+<p><strong>제</strong><strong>7</strong><strong>조</strong><strong> [</strong><strong>회원가입</strong><strong>]</strong></p>
+<p>① 회원으로 가입하여 회사 서비스의 이용을 희망하는 자는 약관의 내용을 숙지한 후 mpp_op@squarenet.co.kr로 회원가입을 위한 신청메일을 보내야 합니다.</p>
+<p>② 회사는 전항에 따라 이용자가 온라인 회원가입을 할 수 있도록 신청양식을 제공하며, 기재하는 모든 회원정보를 실제 데이터인 것으로 간주합니다.</p>
+<p>③ 실명이나 실제 정보를 입력하지 않은 회원은 법적인 보호를 받을 수 없으며, 본 약관의 관련 규정에 따라 서비스 사용에 제한을 받을 수 있습니다.</p>
+<p>④ 회사는 본조 제1항에 따른 이용자의 신청에 대하여 회원가입을 승낙함을 원칙으로 합니다. 다만, 회사는 다음 각호에 해당하는 신청에 대하여는 승낙을 하지 않을 수 있으며, 승낙 이후라도 취소할 수 있습니다.</p>
+<ol>
+<li>이용자의 귀책사유로 인하여 승인이 불가능한 경우</li>
+<li>실명을 사용하지 않은 경우</li>
+<li>타인의 명의 또는 개인정보를 도용하는 경우&nbsp;</li>
+<li>허위의 정보를 제공하는 경우</li>
+<li>중복된 아이디를 사용하는 경우</li>
+<li>회사가 제시하는 회원가입 신청양식에 관련 내용을 기재하지 않은 경우</li>
+<li>이전에 회사 이용약관 또는 관계법령을 위반하여 회원자격이 상실되었던 경우</li>
+<li>본 약관 제19조 [회원의 의무]를 위반하는 경우</li>
+<li>기타 본 약관 및 관계법령을 위반하는 경우</li>
+<li>회원가입 신청양식에 기재되어 회사에 제공되는 개인정보(ID, 비밀번호, 주소 등)가 선량한 풍속 기타 사회질서에 위배되거나 타인을 모욕하는 경우</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>제</strong><strong>8</strong><strong>조</strong><strong> [&ldquo;</strong><strong>회원</strong><strong>&rdquo;</strong><strong>의</strong><strong> &ldquo;</strong><strong>아이디</strong><strong>&rdquo; </strong><strong>및</strong><strong> &ldquo;</strong><strong>비밀번호</strong><strong>&rdquo;</strong><strong>의</strong> <strong>관리에</strong> <strong>대한</strong> <strong>의무</strong><strong>]</strong></p>
+<p>① 회원은 아이디와 비밀번호에 대한 관리책임이 있으며, 이를 타인에게 공개하여 제3자가 이용하도록 하여서는 안됩니다.</p>
+<p>② 회원은 자신의 아이디 및 비밀번호가 유출되어 제3자에 의해 사용되고 있음을 인지한 경우, 즉시 회사에 알려야 합니다.</p>
+<p>③ 회사는 전항의 경우 회원의 개인정보보호 및 기타 서비스 부정이용행위 방지 등을 위하여 회원에게 비밀번호의 변경 등 필요한 조치를 요구할 수 있으며, 회원은 회사의 요구가 있는 즉시 회사의 요청에 성실히 응해야 합니다.</p>
+<p>④ 회사는 회원이 본조 제2항 및 제3항에 따른 의무를 성실히 이행하지 않아 발생한 불이익에 대하여 책임지지 않습니다.</p>
+<p>&nbsp;</p>
+<p><strong>제</strong><strong>9</strong><strong>조</strong><strong> [</strong><strong>이용계약의</strong> <strong>해지</strong><strong>&middot;</strong><strong>해제</strong> <strong>등</strong><strong>]</strong></p>
+<p>① 회원이 이용계약의 해지 또는 해제를 원할 경우에는 본인이 mpp_op@squarenet.co.kr로 이메일 접수를 하여 신청할 수 있습니다.</p>
+<p>② 회사는 회원이 본 약관 또는 관계법령 등을 위반하는 경우, 이용계약을 해지할 수 있습니다.</p>
+<p>&nbsp;</p>
+<p><strong>제</strong><strong>10</strong><strong>조</strong><strong> [</strong><strong>서비스</strong> <strong>이용계약의</strong> <strong>성립</strong> <strong>및</strong> <strong>결제방법</strong> <strong>등</strong><strong>]</strong></p>
+<p>① 회원은 회사에서 안내하는 신용카드, 무통장입금, 인터넷 계좌이체, 휴대폰 결제 등 회사에서 정하고 있는 방법으로 유료서비스의 결제가 가능합니다. 다만, 각 결제수단마다 결제수단의 특성에 따른 일정한 제한이 있을 수 있습니다.</p>
+<p>&nbsp;</p>
+<p><strong>제</strong><strong>11</strong><strong>조</strong><strong> [</strong><strong>회사의</strong> <strong>의무</strong><strong>]</strong></p>
+<p>① 회사는 법령과 본 약관이 정하는 권리의 행사와 의무의 이행을 신의에 좇아 성실하게 하여야 합니다.</p>
+<p>② 회사는 회원이 서비스를 이용하는 과정에서 회원 개인정보가 외부로 유출되지 않도록 유의해야하며, 그 구체적인 내용은 회사 웹사이트의 &ldquo;개인정보처리방침&rdquo;에서 확인할 수 있습니다.</p>
+<p><strong>제</strong><strong>12</strong><strong>조</strong><strong> [</strong><strong>회원의</strong> <strong>의무</strong><strong>]</strong></p>
+<p>① 회원의 이용권한은 회원 개인에 한정되며, 타인에게 양도, 증여하거나 이를 담보 등으로 제공할 수 없습니다.</p>
+<p>② 회사는 회원이 <span style="text-decoration: underline;">다음 각호의 1에 해당하는 의무를 위반 하였을 경우, 이용계약을 해지할 수 있습니다</span><u>. </u></p>
+<ol>
+<li>회원이 이용신청 또는 변경 시, 허위사실을 기재하거나 자신 또는 다른 회원의 ID 및 개인정보를 이용ㆍ공유하는 경우</li>
+<li>회원이 회사 또는 제3자의 권리 등을 침해하는 경우</li>
+<li>회원이 회사에서 제공하는 서비스를 이용하여 상품 또는 용역을 판매하는 영업활동 등의 상행위를 하는 경우</li>
+<li>회원이 다른 이용자의 서비스 이용을 방해하거나 회사의 운영진, 직원 또는 관계자를 사칭하는 경우</li>
+<li>회원이 회사 웹사이트 내에서 사회의 안녕질서 혹은 미풍양속을 저해하는 행위를 하거나, 그와 관련된 부호ㆍ문자ㆍ음성ㆍ음향 및 영상 등의 정보를 게시하여 타인에게 유포시키는 경우</li>
+<li>회사의 서비스 운영을 고의로 방해 하거나 그리할 목적으로 다량의 정보를 전송하거나 광고성 정보를 전송하는 경우</li>
+<li>관계법령 및 기타 본 약관에서 규정한 사항을 위반한 경우</li>
+<li>회사 및 타인의 명예를 훼손하거나 모욕하는 경우 등</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>제</strong><strong>13</strong><strong>조</strong><strong> [</strong><strong>부정이용</strong> <strong>금지</strong> <strong>및</strong> <strong>차단</strong><strong>]</strong></p>
+<p>① 회사는 <span style="text-decoration: underline;">다음 각호에 해당하는 경우를 부정 이용행위로 봅니다</span><u>. </u></p>
+<ol>
+<li>동일한 ID로 2대 이상의 PC에서 <u>동시접속이</u> <u>발생</u>하는 경우</li>
+<li>동일한 ID로 <u>다수의</u><u> PC </u><u>또는</u><u> IP</u><u>에서</u> <u>서비스를</u> <u>이용</u>하는 경우</li>
+<li>자신의 ID 및 강좌 등의 <span style="text-decoration: underline;">서비스를 타인이 이용</span>하도록 하는 경우</li>
+<li>자신의 ID 및 강좌 등의 <span style="text-decoration: underline;">서비스를 타인에게 판매, 대여, 양도하는 행위 및 이를 광고</span>하는 행위</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>제</strong><strong>14</strong><strong>조</strong><strong> [</strong><strong>서비스의</strong> <strong>제공</strong> <strong>및</strong> <strong>변경</strong><strong>]</strong></p>
+<p>① 회사는 연중무휴, 1일 24시간 서비스 제공을 원칙으로 합니다.</p>
+<p>② 회사는 운영상 또는 기술상 등의 상당한 이유가 있는 경우 제공하고 있는 서비스를 변경할 수 있습니다.</p>
+<p>③ 전항에 따라 서비스가 변경되는 경우에는 변경되는 사유 및 내용을 본 약관 제6조에 따른 방법으로 회원에게 통지합니다.</p>
+<p>&nbsp;</p>
+<p><strong>제</strong><strong>15</strong><strong>조</strong><strong> [</strong><strong>정보의</strong> <strong>제공</strong> <strong>및</strong> <strong>광고의</strong> <strong>게재</strong> <strong>등</strong><strong>] </strong></p>
+<p>① 회사는 회원이 서비스 이용 중 필요하다고 인정되는 다양한 정보를 공지사항이나 전자우편 또는 유선상 등의 방법으로 회원에게 제공할 수 있습니다. 다만, 회원은 언제든지 전자우편 등을 통하여 수신 거절을 할 수 있습니다.</p>
+<p>② 회사는 회원에게 회사가 서비스하는 상품에 대하여 회원 가입 시 기입한 전화번호로 전화권유판매를 할 수 있으며, 회원은 회사의 전화권유판매에 대한 수신거절을 할 수 있습니다. </p>
+<p><strong>제</strong><strong>16</strong><strong>조</strong><strong> [</strong><strong>콘텐츠</strong> <strong>저작권</strong><strong>] </strong></p>
+<p>① <span style="text-decoration: underline;"><strong>회사가</strong> <strong>제공하는</strong> <strong>모든</strong><strong> Microsoft Professional Program </strong><strong>콘텐츠에</strong> <strong>대한</strong> <strong>저작권은</strong><strong> Microsoft</strong><strong>에</strong> <strong>있습니다</strong><strong>.</strong></span></p>
+<p>② 회원은 회사가 제공하는 서비스를 이용함으로써 얻은 정보를 회사의 사전 승낙없이 녹화ㆍ복제ㆍ개조 ㆍ편집ㆍ전시ㆍ전달ㆍ전송ㆍ무단배포ㆍ판매ㆍ방송ㆍ이차 저작물 제작ㆍ재라이센스 부여하는 등의 행위로 회사의 저작권을 침해 하여서는 안됩니다.</p>
+<p>&nbsp;</p>
+<p><strong>제</strong><strong>17</strong><strong>조</strong><strong> [</strong><strong>개인정보보호</strong><strong>] </strong></p>
+<p>① 회사는 회원의 개인정보보호를 중요시하며, 회원이 회사의 서비스를 이용함과 동시에 온라인상에서 회사에게 제공한 개인정보의 철저한 보호를 위하여 최선을 다하고 있습니다.</p>
+<p><strong>제</strong><strong> 18</strong><strong>조</strong><strong> [</strong><strong>면책조항</strong><strong>] </strong></p>
+<p>① 회사는 천재지변 또는 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없는 경우에는 서비스 제공에 관한 책임이 면제됩니다.</p>
+<p>② 회사는 회원의 귀책사유로 인하여 발생한 서비스 이용의 장애에 대하여는 책임을 지지 않습니다.</p>
+<p>③ 회사는 회원이 서비스와 관련하여 게재한 정보, 자료, 사실의 신뢰도, 정확성 등의 내용에 관하여는 책임을 지지 않습니다.</p>
+<p>④ 회사는 이용자 상호간 또는 이용자와 제3자 간에 콘텐츠를 매개로 하여 발생한 분쟁 등에 대하여 책임을 지지 않습니다.</p>
+<p>[부칙] 1.본 약관은 2018년 1월 1일부터 시행합니다.</p>
+<p><br /><br /></p>
+<p><strong>COPYRIGHT AND TRADEMARK NOTICES</strong></p>
+<p>&copy; MPP Lab Corporation. All rights reserved. MPP Lab or our suppliers own the title, copyright, and other intellectual property rights in all elements of the Services. MPP Lab and the names, logos, and icons of all MPP Lab products, software, and services may be either trademarks or registered trademarks of MPP Lab in the Korea and/or other countries. The names of actual companies and products may be the trademarks of their respective owners.</p>
+</section>
