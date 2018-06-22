@@ -105,14 +105,14 @@ site_status_msg = get_site_status_msg(course_id)
             </li>
           %endif
         </%block>
-<!-- Google Translator_api, 로그인, 공지사항-->
-
-		<div id="google_translate_element"></div><script type="text/javascript">
-                  function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'ko', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');}
-                </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>       
       </ol>
 
       <%include file="user_dropdown.html"/>
+<!-- Google Translator_api, 로그인, 공지사항-->
+
+		<div id="google_translate_element" style="float:right;margin-top: 10px;"></div><script type="text/javascript">
+                  function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'ko', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');}
+                </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>       
 
       % if should_display_shopping_cart_func() and not (course and static.is_request_in_themed_site()): # see shoppingcart.context_processor.user_has_cart_context_processor
         <ol class="user">
